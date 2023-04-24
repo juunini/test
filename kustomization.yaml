@@ -1,0 +1,7 @@
+resources:
+  - namespace.yaml
+  - rollout.yaml
+  - secret.yaml
+  - service.yaml
+  - ingress.yaml
+  - issuer.yaml

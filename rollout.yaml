@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: app
+  namespace: app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: app
+  template:
+    metadata:
+      labels:
+        app: app
+    spec:
+      containers:
+        - name: app
+          image: docker.io/alexcollinsintuit/argosay:v2
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 12000
+      imagePullSecrets:
+        - name: regcred
+  strategy:
+    blueGreen:
+      activeService: app
+      autoPromotionEnabled: false
