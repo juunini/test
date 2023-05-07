@@ -1,1 +1,1 @@
-{"title":"test","tags":["test"],"authorId":41536271,"variables":[{"name":"$test","description":"이것은 테스트","default":"test"}],"created":1683260572000,"updated":1683292972062}
+{"title":"test","tags":["test"],"authorId":41536271,"variables":[{"name":"$test","description":"이것은 테스트","default":"test"},{"name":"asfasdf","description":"safadsf","default":"sadfasdf"}],"created":1683260572000,"updated":1683436182361}
