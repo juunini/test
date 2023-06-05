@@ -1,4 +1,8 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'us-central1-docker.pkg.dev/cm-gcpgroup/juunini-test/juunini-test:0.0.3', '.']
-images: ['us-central1-docker.pkg.dev/cm-gcpgroup/juunini-test/juunini-test:0.0.3']
+  args: ['build', '-t', 'us-central1-docker.pkg.dev/cm-gcpgroup/juunini-test/juunini-test:0.0.4', '.']
+images: ['us-central1-docker.pkg.dev/cm-gcpgroup/juunini-test/juunini-test:0.0.4']
+
+logsBucket: 'gs://juunini-test'
+options:
+  logging: GCS_ONLY
